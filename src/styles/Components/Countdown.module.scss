@@ -55,3 +55,12 @@
 .countdownButton:hover {
     background: $blue-dark;
 }
+
+.countdownButtonActive {
+    background-color: $white;
+    color: $title;
+}
+.countdownButtonActive:hover {
+    background-color: $red;
+    color: $white;
+}
