@@ -1,10 +1,11 @@
-import React from 'react';
-import ExperienceBar from '../components/ExperienceBar';
-import Profile from '../components/Profile';
-import CompletedChallenges from '../components/CompletedChallenges';
-import Countdown from '../components/Countdown';
-import styles from '../styles/Components/Home.module.scss';
-import Head from 'next/head';
+import React from "react";
+import ExperienceBar from "../components/ExperienceBar";
+import Profile from "../components/Profile";
+import CompletedChallenges from "../components/CompletedChallenges";
+import Countdown from "../components/Countdown";
+import styles from "../styles/Components/Home.module.scss";
+import Head from "next/head";
+import ChallengeBox from "../components/ChallengeBox";
 
 function App() {
   return (
@@ -13,16 +14,17 @@ function App() {
         <title>Inicio | Move.It</title>
       </Head>
       <ExperienceBar />
-      <section >
+
+      <section>
         <div>
           <Profile />
           <CompletedChallenges />
           <Countdown />
         </div>
-      </section>
 
-      <section>
-
+        <div>
+          <ChallengeBox />
+        </div>
       </section>
     </div>
   );
